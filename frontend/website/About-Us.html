@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About-Us</title>
+        <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+                background: darkgreen;
+            }
+            .header-container1 {
+                background: lightgreen;
+                display: flex;
+                align-content: right;
+                border-radius: 0%;
+            }
+            .Our-Services h1 {
+                text-align: center;
+                color: black;
+            }
+            .Our-Services {
+               text-align: center;
+                padding: 20px;
+                width: 60%;
+                background: pink;
+                margin: 20px;
+                border-radius: 10px;
+                
+            }
+            .ul li {
+                text-align: left;
+                padding: 0%;
+                list-style-type: none;
+                margin: 10px;
+                line-height: 1.5;
+            
+            }
+            .ul li::before{
+                content: "✔️";
+
+            }
+            .header-container2 {
+                background: lightcoral;
+                text-align: left;
+                padding:20px auto;
+                width: 60%;
+                margin: 20px;
+                border-radius: 10px;
+                line-height: normal;
+            }
+            .mission{
+                padding: 0%;
+                margin: 10px;
+                text-align: center;
+            }
+            
+            .Vision {
+                padding: 0;
+                margin: 10px;
+                text-align: center;
+            }
+           .Uvp {
+            padding: 0;
+                margin: 10px;
+                text-align: center;
+           }
+    </style>
+        
+    </head>
+    <body>
+        
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="https://via.placeholder.com/50" alt="Logo">
+                    <h1>SUMBO APP</h1>
+                </div>
+                <div class="nav-container">
+                    <ul class="nav-center">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="About-Us.html">About Us</a></li>
+                        <li><a href="Courses.html">Courses</a></li>
+                        <li><a href="Store.html">Store</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <ul class="nav-right">
+                    <li><a href="Account.html">Account</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            </nav>
+        </div>
+        <header class="header-main">
+            <h1>About-Us Page</h1>
+            <img src="irrigation.JPEG" alt="irrigation" height="300px" width="100%">
+        </header>
+        <header class="header-container1">
+        <section class="Our-Services">
+            <h1>Our Services</h1>
+            <p>At <strong>SUMBO APP</strong>, we empower farmers with essential knowledge, tools, and support to boost productivity and minimize post-harvest losses.</p>
+            <ul class="ul">
+               <li>Training & E-Learning – Access expert courses on sustainable farming, irrigation, pest control, and post-harvest management</li>
+               <li>AI-Powered Chatbot Support – Get instant farming advice 24/7 on best agricultural practices and crop management.</li>
+                <li>Irrigation Guidance – Learn step-by-step irrigation setup and management for year-round farming.</li>
+                <li>Post-Harvest Management – Improve storage, reduce waste, and maximize profit with expert strategies.</li>
+               <li> E-Store for Farmers & Buyers – Connect directly with buyers, sell fresh produce, and access quality farming tools.</li>
+                <li>Join SUMBO APP today and elevate your farming success! 🌱🚜</li>
+            </ul>
+            </section>;
+            <section class="header-container2">
+               <div class="mission">
+                <h1>Our Mission</h1>
+                <p>Our Mission is to transform agriculture in the Savanna region of Ghana through education and technology </p>
+               </div> 
+           <div class="Vision">
+            <h1>Our Vision</h1>
+            <p>At SUMBO APP, we envision a future where farmers thrive through innovation, sustainability, and digital empowerment. Our goal is to revolutionize agriculture by providing accessible knowledge, smart irrigation solutions, and efficient post-harvest management strategies. Through technology-driven support and seamless market connections, we strive to enhance productivity, reduce waste, and improve farmers' livelihoods, creating a resilient and prosperous agricultural ecosystem for generations to come.</p>
+        </div>
+           <div class="Uvp">
+            <h1>Our Unique Value Proposition</h1>
+            <p>SUMBO APP is the ultimate digital companion for farmers, offering expert-led training, AI-powered support, and seamless market connections—all in one platform. Unlike traditional farming methods, we leverage technology-driven solutions to equip farmers with real-time insights, smart irrigation techniques, and post-harvest management strategies. Our AI chatbot provides instant farming advice 24/7, while our e-store connects farmers directly with buyers, ensuring higher productivity, reduced waste, and improved profitability. With SUMBO APP, farmers gain the knowledge, tools, and network they need to succeed—anytime, anywhere.</p>
+           
+           </div>
+            </section>
+        </header>
+
+        </div>
+        <script>
+            function toggleMenu() {
+                document.querySelector('.nav-center').classList.toggle('active');
+                document.querySelector('.nav-right').classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>

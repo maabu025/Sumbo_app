@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SUMBO-APP</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+           body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #228B22;
+            color: black;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: black;
+        }
+        .hero h1 {
+            font-size: 36px;
+            color: black;
+        }
+        .hero button {
+            padding: 10px 20px;
+            background-color: #FFD700;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background: #F8F8F8;
+        }
+        .feature {
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+        }
+        .testimonials {
+            text-align: center;
+            padding: 50px;
+            background: #F0FFF0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #228B22;
+            color: white;
+        }
+        .hero section p {
+            color: black;
+        }
+        </style>
+    </head>
+    <body>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="https://via.placeholder.com/50" alt="Logo">
+                    <h1>SUMBO APP</h1>
+                </div>
+                <div class="nav-container">
+                    <ul class="nav-center">
+                       
+                        <li><a href="About-Us.html">About Us</a></li>
+                        <li><a href="Courses.html">Courses</a></li>
+                        <li><a href="Store.html">Store</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                       
+                    </ul>
+                </div>
+                <ul class="nav-right">
+                    <li><a href="cart.html">Account</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            </nav>
+        </div>
+        <section class="hero">
+            <h1>Empowering Farmers with Smart Agriculture Solutions!</h1>
+            <p>Learn sustainable farming, get expert support, and connect with buyers—all in one place.</p>
+            <button>Sign Up Now</button>
+        </section>
+        
+        <section class="features">
+            <div class="feature">
+                <h2>🧑‍🌾 Farmer Training</h2>
+                <p>Access expert courses on irrigation, post-harvest management, and sustainable farming.</p>
+            </div>
+            <div class="feature">
+                <h2>🤖 AI Chatbot</h2>
+                <p>Get real-time farming advice and solutions from our AI-powered assistant.</p>
+            </div>
+            <div class="feature">
+                <h2>🛒 Online Marketplace</h2>
+                <p>Buy and sell agricultural products effortlessly.</p>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>What Farmers Say</h2>
+            <p>"Thanks to SUMBO APP, I improved my harvest by 30% and found new buyers!" – Mr. Boamah, Ghana</p>
+        </section>
+        <footer class="footer">
+            <p>Contact: support@sumboapp.com | +233 539086138</p>
+            <p>Follow us on: Facebook | Twitter | WhatsApp | LinkedIn</p>
+        </footer>
+        <script>
+            function toggleMenu() {
+                document.querySelector('.nav-center').classList.toggle('active');
+                document.querySelector('.nav-right').classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
