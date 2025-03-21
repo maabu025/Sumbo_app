@@ -1,47 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SUMBO-APP</title>
-       <link rel="stylesheet" href="styles.css">
-       <style>
-        
-        
-       </style>
-    </head>
-    <body>
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="https://via.placeholder.com/50" alt="Logo">
-                    <h1>SUMBO APP</h1>
-                </div>
-                <div class="nav-container">
-                    <ul class="nav-center">
-                        <li><a href="Home.html">Home</a></li>
-                        <li><a href="About-Us.html">About Us</a></li>
-                        <li><a href="Courses.html">Courses</a></li>
-                        <li><a href="Store.html">Store</a></li>
-                        <li><a href="contact us.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <ul class="nav-right">
-                    <li><a href="Account.html">Account</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                </ul>
-                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-                
-            </nav>
-        </div>
-        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .toggle {
+            margin-top: 10px;
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="formTitle">Login</h2>
+        <form id="accountForm">
+            <div class="form-group" id="nameField" style="display: none;">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" id="submitButton">Login</button>
+        </form>
+        <p class="toggle" onclick="toggleForm()">Don't have an account? Sign Up</p>
+    </div>
 
-        
+    <script>
+        let isLogin = true;
 
-        <script>
-            function toggleMenu() {
-                document.querySelector('.nav-center').classList.toggle('active');
-                document.querySelector('.nav-right').classList.toggle('active');
-            }
-        </script>
-    </body>
+        function toggleForm() {
+            isLogin = !isLogin;
+            document.getElementById('formTitle').innerText = isLogin ? 'Login' : 'Create Account';
+            document.getElementById('submitButton').innerText = isLogin ? 'Login' : 'Create Account';
+            document.getElementById('nameField').style.display = isLogin ? 'none' : 'block';
+            document.querySelector('.toggle').innerText = isLogin ? "Don't have an account? Sign Up" : "Already have an account? Login";
+            
+        }
+    </script>
+</body>
 </html>

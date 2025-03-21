@@ -1,5 +1,5 @@
 * {
-    max-width: 1280px;
+    max-width:auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,20 +10,44 @@
         }
     
         .header-container{
-            background:blueviolet;
+            background: blueviolet;
             width: 100%;
             height: 500px;
             border-radius: 0 0 20% 0;
-            
         }
+        .course-image{
+            background-color: brown; 
+            height: 200px; 
+            margin: 5px;
+        }
+        .header-container-store {
+            background: yellow;
+            width: 100%;
+            height: 500px;
+            border-radius: 0%;
+        }
+        .header-container-courses {
+            background: white;
+            width: 100%;
+            height: 350px;
+            border-radius: 0%;
+        }
+        
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px 20px;
-            background: black;
+            color: black;
             
         }
+        
+         
+
+        #navbg {
+            background:rgb(0, 0, 0);
+        }
+
         .logo {
                 display: flex;
                 align-items: center;
@@ -51,7 +75,7 @@
     
             .nav-center a, .nav-right a {
                 text-decoration: none;
-                color: white;
+                color: black;
                 font-size: 18px;
                 transition: 0.3s;
             }
@@ -149,7 +173,7 @@
             }
     
             .more {
-                width: 120px;
+                width: 100px;
                 height: 30px;
                 background-color: rgb(50, 159, 210);
                 color: #fff;
@@ -199,7 +223,12 @@
                     grid-column: span 12;
                 }
             }
-
-            
-            
+            .product-container {
+                display: auto;
+                background: #444;
+                height: 500px;
+                align-items: center;
+                color: #fff;
+                padding: 12px;
+            }
            
